@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Int to Array</title>
+</head>
+
+<body>
+    <script>
+        var arr = [1, 2, 3, 4, 5]
+        for (var i = 0; i <= arr.length - 1; i++) {
+            var left = 0;
+            var right = arr.length - 1;
+            if (left < right) {
+                var temp = arr[right];
+                arr[right] = arr[left];
+                arr[left] = temp;
+                left++;
+                right--;
+            }
+            for (var i = 0; i <= arr.length - 1; i++) {
+                document.write(arr[i]);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
