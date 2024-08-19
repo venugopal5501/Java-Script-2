@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Occurs</title>
+</head>
+
+<body>
+    <script>
+        var a = prompt("enter number separate by comma");
+        var b = a.split(",").map(Number);
+        var c = prompt("enter number to search");
+        occurs(b);
+        function occurs(arr) {
+            var found = false;
+            var d = parseInt(c);
+            for (var i = 0; i < arr.length - 1; i++) {
+                if (arr[i] == d) {
+                    found = true;
+                }
+            }
+            if (found) {
+                document.write("yes");
+            }
+            else {
+                document.write("no");
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

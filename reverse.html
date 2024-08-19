@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Int to Array</title>
+</head>
+
+<body>
+    <p id="1"></p>
+    <script>
+        var arr=[5,4,3,2,1]
+   
+            for (var i = 0; i <= arr.length - 1; i++) {
+                var left=0;
+                var right=arr.length-1;
+                while(left<right){
+                    var temp=arr[right];
+                    arr[right]=arr[left];
+                    arr[left]=temp;
+                    left ++;
+                    right --;
+                }
+            // for(var i=0;i<arr;i++){
+                //document.getElementById("1").innerHTML=arr;
+                
+            }
+            document.write(arr);
+        
+    
+    </script>
+
+</body>
+
+</html>
