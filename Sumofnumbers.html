@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Sum</title>
+</head>
+
+<body>
+    Enter Number <input type="text" id="1">
+    <p id="3"></p>
+    <p id="v"></p>
+    <button onclick="add()">Addition</button>
+    <button onclick="mul()">Multiply</button>
+    <script>
+        function add() {
+            var a = 0;
+            var b = document.getElementById('1').value;
+            var c = parseInt(b);
+
+            for (var i = 1; i <= c; i++) {
+                a = a + i;
+            }
+            document.getElementById('3').innerHTML = a;
+        }
+
+        function mul() {
+            var m = 1;
+            var n = document.getElementById('1').value;
+            var o = parseInt(n);
+            for (var j = 1; j <= o; j++) {
+                m = m * j;
+            }
+            document.getElementById('v').innerHTML = m;
+
+        }
+    </script>
+</body>
+
+</html>
