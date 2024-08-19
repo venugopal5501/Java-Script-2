@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Odd Positions</title>
+</head>
+
+<body>
+    <p id="1"></p>
+    Enter Number <input type="text" id="55">
+    <button onclick="string()">Find</button>
+
+    <script>
+        function string() {
+            var c = document.getElementById("55");
+            var d = c.value;
+            var e = d.split(",").map(Number);
+            odd(e);
+        }
+
+
+        //var a = [1, 2, 3, 4, 5, 6, 10, 10, 10, 10, 1];
+
+
+        function odd(a) {
+
+            for (var i = 1; i < a.length; i++) {
+                if (i % 2 != 0) {
+                    document.getElementById('1').innerHTML += a[i] + ",";
+
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
