@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Palindrome</title>
+</head>
+
+<body>
+    Enter Word <input type="text" id="1">
+    <p id="2"></p>
+    <button onclick="sample()">Submit</button>
+    <script>
+        function sample() {
+            var as = document.getElementById('1');
+            var ad = as.value;
+            Palindrome(ad);
+        }
+        function Palindrome(ap) {
+            var u = document.getElementById('1');
+            var v = u.value;
+            var b = ap.split("").reverse().join("");
+            if (v === b) {
+                document.getElementById('2').innerHTML = "yes"
+            }
+            else {
+                document.getElementById('2').innerHTML = "no"
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!-- <!doctype html>
+<html>
+
+<head>
+    <title>Palindrome</title>
+</head>
+
+<body>
+    <p id="1"></p>
+    <button onclick="palindrome()">Check</button>
+
+    <script>
+        var a = (prompt("enter string"));
+
+        function palindrome() {
+            var reverse = '';
+            var b = a.length;
+            var c = a;
+            for (var i = b - 1; i >= 0; i--) {
+                reverse = reverse + a[i];
+            }
+            if (reverse === c) {
+                document.getElementById('1').innerHTML = "yes";
+
+            }
+            else {
+                document.getElementById('1').innerHTML = "no";
+            }
+        }
+    </script>
+
+</body>
+
+</html> -->
