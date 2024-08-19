@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Merge Array</title>
+</head>
+
+<body>
+    <script>
+        var a = [1, 4, 6];
+        var b = [2, 3, 5];
+        var merge = [...a, ...b];
+        var c=merge[0]
+        for (var i = 0; i < merge.length; i++) {
+            if(merge[i]<c){
+                var temp= merge[i];
+                merge[i]=c;
+                c=temp;
+            }
+        }
+        for(var i=0;i<merge.length;i++){
+            document.write(merge[i]);
+        }
+    </script>
+</body>
+
+</html>
