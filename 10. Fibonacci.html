@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Fibonacci Series</title>
+</head>
+
+<body>
+    <script>
+        var a = 100;
+        var b = 0;
+        var c = 1;
+        for (i = 3; i <= a; i++) {
+            var nextterm = b + c;
+            b = c;
+            c = nextterm;
+            document.write(nextterm + "<br>");
+        }
+    </script>
+</body>
+
+</html>

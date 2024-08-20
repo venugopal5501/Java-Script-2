@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Int to List</title>
+</head>
+
+<body>
+    Enter number <input type="number" id="1">
+    <button onclick="list()">Ok</button>
+    <script>
+        function list() {
+            var arr = [];
+            var a = document.getElementById('1').value;
+            for (var i = 0; i < a.length; i++) {
+                arr.push(a[i])
+            }
+            // var a1 = a.toString();
+            // var b = a1.split("");
+            // var arr = b.join(",");
+            document.write("[" + arr + "]");
+        }
+
+    </script>
+</body>
+
+</html>
